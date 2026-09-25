@@ -326,7 +326,7 @@ onUnmounted(() => {
         </p>
 
         <RouterLink
-          to=""
+          to="#shop"
           class="continue-shopping"
           @click="close"
         >
@@ -464,7 +464,7 @@ onUnmounted(() => {
           </RouterLink>
 
           <RouterLink
-            to=""
+            to="#shop"
             class="continue-shopping-link"
             @click="close"
           >
