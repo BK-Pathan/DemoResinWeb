@@ -244,9 +244,9 @@ const emit = defineEmits(['search'])
 
 const links = [
   { label: 'Home', to: '/' },
-  { label: 'Shop', to: '/shop' },
+  // { label: 'Shop', to: '/shop' },
   { label: 'About', to: '/about' },
-  { label: 'Review', to: '/review' },
+  // { label: 'Review', to: '/review' },
   { label: 'Contact', to: '/contact' }
 ]
 
@@ -516,7 +516,7 @@ onBeforeUnmount(() => {
 
   padding: var(--space-sm) 0;
 
-  color: var(--color-text-primary);
+  color: var(--color-brand-navy-light);
 
   font-family: var(--font-body);
   font-size: 13px;
@@ -548,7 +548,7 @@ onBeforeUnmount(() => {
 
 .nav-link:hover,
 .nav-link.is-active {
-  color: var(--color-accent-light);
+  color: var(--color-brand-navy-light);
 }
 
 .nav-link.is-active::after,

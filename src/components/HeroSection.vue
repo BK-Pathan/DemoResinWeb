@@ -1090,7 +1090,94 @@
     transition: none;
   }
 }
+/* =========================================================
+   HERO TEXT + ICON COLORS
+   Desktop / Laptop = Pink
+   Mobile = White
+   ========================================================= */
 
+/* ---------------------------------------------------------
+   DESKTOP / LAPTOP
+   Hero main text
+   --------------------------------------------------------- */
+
+.hero-copy h1 {
+  color: var(--color-brand-navy);
+}
+
+.hero-description {
+  color: var(--color-brand-navy);
+}
+
+/* Eyebrow */
+.eyebrow {
+  color: var(--color-brand-navy);
+}
+
+/* Trust feature icons */
+.feature-icon {
+  color: var(--color-brand-navy);
+}
+
+/* Trust feature text */
+.feature-text strong {
+  color: var(--color-brand-navy);
+}
+
+.feature-text span {
+  color: var(--color-brand-navy-light);
+}
+
+/* Scroll indicator */
+.scroll-indicator {
+  color: var(--color-brand-navy);
+}
+
+.scroll-arrow {
+  stroke: var(--color-brand-navy);
+}
+
+
+/* =========================================================
+   MOBILE
+   <= 768px
+   Hero text + icons become white
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+  .hero-copy h1 {
+    color: var(--color-text-primary);
+  }
+
+  .hero-description {
+    color: var(--color-text-primary);
+  }
+
+  .eyebrow {
+    color: var(--color-text-primary);
+  }
+
+  .feature-icon {
+    color: var(--color-text-primary);
+  }
+
+  .feature-text strong {
+    color: var(--color-text-primary);
+  }
+
+  .feature-text span {
+    color: var(--color-text-secondary);
+  }
+
+  .scroll-indicator {
+    color: var(--color-text-primary);
+  }
+
+  .scroll-arrow {
+    stroke: var(--color-text-primary);
+  }
+}
 </style>
 
 

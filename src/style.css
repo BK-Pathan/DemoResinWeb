@@ -1,77 +1,77 @@
 :root {
   /* =========================================
-     ROYAL RESIN ART — COLOR THEME
+     ROYAL RESIN ART — COLOR THEME (Tea Pink & White)
      ========================================= */
 
   /* ---------- Brand Colors ---------- */
-  --color-brand-navy: #081F2A;
-  --color-brand-navy-deep: #06161D;
-  --color-brand-navy-light: #0D2F3D;
+  --color-brand-navy: #A24A63;
+  --color-brand-navy-deep: #6E2F41;
+  --color-brand-navy-light: #C97C93;
 
-  --color-brand-gold: #D4A64A;
-  --color-brand-gold-light: #E7C06A;
-  --color-brand-gold-dark: #B9852F;
+  --color-brand-gold: #D8B896;
+  --color-brand-gold-light: #E8CFAE;
+  --color-brand-gold-dark: #B99367;
 
   /* ---------- Backgrounds ---------- */
-  --color-bg-primary: #081F2A;
-  --color-bg-secondary: #0B2935;
-  --color-bg-dark: #06161D;
+  --color-bg-primary: #A24A63;
+  --color-bg-secondary: #B85C7A;
+  --color-bg-dark: #6E2F41;
 
-  --color-bg-light: #F8F6F2;
-  --color-bg-off-white: #FDFBF7;
+  --color-bg-light: #FFFFFF;
+  --color-bg-off-white: #FFF8FA;
   --color-bg-card: #FFFFFF;
 
   /* --color-hero-black:rgba(0, 0, 0, 0.212); */
-  
+
   /* ---------- Surfaces ---------- */
-  --color-surface-dark: #0B2732;
-  --color-surface-dark-soft: #102F3A;
+  --color-surface-dark: #96435C;
+  --color-surface-dark-soft: #A9526C;
   --color-surface-light: #FFFFFF;
-  --color-surface-light-soft: #F4F1EB;
+  --color-surface-light-soft: #FCEEF1;
 
   /* ---------- Text ---------- */
-  --color-text-primary: #F8F6F2;
-  --color-text-secondary: #D8D2C7;
-  --color-text-muted: #A9A39A;
+  --color-text-primary: #FFF5F7;
+  --color-text-secondary: #EFD3DA;
+  --color-text-muted: #D1A8B3;
 
-  --color-text-dark: #17191A;
-  --color-text-dark-secondary: #5F5A55;
-  --color-text-dark-muted: #817B74;
+  --color-text-dark: #34121C;
+  --color-text-dark-secondary: #74505A;
+  --color-text-dark-muted: #9C7C84;
 
   /* ---------- Gold Text / Accent ---------- */
-  --color-accent: #D4A64A;
-  --color-accent-light: #E7C06A;
-  --color-accent-dark: #B9852F;
+  --color-accent: #D8B896;
+  --color-accent-light: #E8CFAE;
+  --color-accent-dark: #B99367;
 
   /* ---------- Borders ---------- */
-  --color-border-dark: rgba(212, 166, 74, 0.28);
+  --color-border-dark: rgba(216, 184, 150, 0.28);
   --color-border-dark-soft: rgba(255, 255, 255, 0.10);
 
-  --color-border-light: #E4DED4;
-  --color-border-light-soft: #EEEAE3;
+  --color-border-light: #F3DFE4;
+  --color-border-light-soft: #FBEEF1;
 
   /* ---------- Buttons ---------- */
-  --color-button-primary: #D4A64A;
-  --color-button-primary-hover: #E7C06A;
-  --color-button-primary-text: #081F2A;
+  --color-button-primary: #D8B896;
+  --color-button-primary-hover: #E8CFAE;
+  --color-button-primary-text: #34121C;
 
-  --color-button-dark: #081F2A;
-  --color-button-dark-hover: #0D2F3D;
+  --color-button-dark: #A24A63;
+  --color-button-dark-hover: #B85C7A;
   --color-button-dark-text: #FFFFFF;
 
   /* ---------- Icons ---------- */
-  --color-icon-primary: #D4A64A;
-  --color-icon-light: #F8F6F2;
-  --color-icon-dark: #081F2A;
+  --color-icon-primary: #D8B896;
+  --color-icon-light: #FFF5F7;
+  --color-icon-dark: #A24A63;
 
   /* ---------- Overlay ---------- */
-  --color-overlay-dark: rgba(6, 22, 29, 0.72);
-  --color-overlay-heavy: rgba(6, 22, 29, 0.88);
+  --color-overlay-dark: rgba(110, 47, 65, 0.72);
+  --color-overlay-heavy: rgba(110, 47, 65, 0.88);
 
   /* ---------- Shadows ---------- */
-  --shadow-soft: 0 8px 30px rgba(6, 22, 29, 0.12);
-  --shadow-card: 0 12px 35px rgba(6, 22, 29, 0.14);
-  --shadow-gold: 0 8px 25px rgba(212, 166, 74, 0.18);
+  --shadow-soft: 0 8px 30px rgba(110, 47, 65, 0.12);
+  --shadow-card: 0 12px 35px rgba(110, 47, 65, 0.14);
+  --shadow-gold: 0 8px 25px rgba(216, 184, 150, 0.18);
 
   /* ---------- Radius ---------- */
   --radius-sm: 4px;
@@ -86,7 +86,7 @@
   /* ---------- Spacing ---------- */
   --space-xs: 4px;
   --space-sm: 8px;
-  --space-mid:13px;
+  --space-mid: 13px;
   --space-md: 16px;
   --space-lg: 24px;
   --space-xl: 32px;
@@ -95,9 +95,9 @@
   --space-4xl: 96px;
 }
 
-body{
-  padding:0;
-  margin:0;
+body {
+  padding: 0;
+  margin: 0;
   background-color: var(--color-bg-dark);
 }
 

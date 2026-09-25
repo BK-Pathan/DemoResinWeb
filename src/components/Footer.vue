@@ -19,9 +19,9 @@ const contactInfo = {
 
 const quickLinks = [
   { label: 'Home', to: '/' },
-  { label: 'Shop', to: '/shop' },
+  // { label: 'Shop', to: '/shop' },
   { label: 'About', to: '/about' },
-  { label: 'Review', to: '/review' },
+  // { label: 'Review', to: '/review' },
   { label: 'Contact', to: '/contact' }
 ]
 
@@ -116,8 +116,8 @@ const scrollToTop = () => {
               class="brand-text"
               aria-hidden="true"
             >
-              <span class="brand-name">ROYAL</span>
-              <span class="brand-sub">RESIN ART</span>
+              <span class="brand-name">RESIN</span>
+              <span class="brand-sub">BY KAINAT</span>
             </span>
           </RouterLink>
 

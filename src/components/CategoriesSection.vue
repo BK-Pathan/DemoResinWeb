@@ -86,101 +86,98 @@ const categories = [
            CATEGORY CARDS
            ===================================================== -->
 
-      <ul class="categories-grid">
+   <!-- =====================================================
+     CATEGORY CARDS
+     ===================================================== -->
 
-        <li
-          v-for="category in categories"
-          :key="category.id"
-          class="category-item"
+<ul class="categories-grid">
+
+  <li
+    v-for="category in categories"
+    :key="category.id"
+    class="category-item"
+  >
+
+    <div class="category-card">
+
+      <!-- IMAGE -->
+      <div class="card-media">
+
+        <img
+          v-if="category.image"
+          :src="category.image"
+          :alt="category.title"
+          class="card-image"
+          loading="lazy"
+        />
+
+        <div
+          v-else
+          class="card-placeholder"
+          aria-hidden="true"
         >
 
-          <a
-            :href="`/shop?category=${category.id}`"
-            class="category-card"
+          <svg viewBox="0 0 24 24">
+
+            <rect
+              x="3"
+              y="4"
+              width="18"
+              height="16"
+              rx="2"
+            />
+
+            <circle
+              cx="9"
+              cy="10"
+              r="1.6"
+            />
+
+            <path d="m4 18 5-5 4 4 3-3 4 4" />
+
+          </svg>
+
+        </div>
+
+      </div>
+
+      <!-- DARK OVERLAY -->
+      <div class="card-overlay"></div>
+
+      <!-- CARD CONTENT -->
+      <div class="card-body">
+
+        <h3>
+          {{ category.title }}
+        </h3>
+
+        <p>
+          {{ category.description }}
+        </p>
+
+        <span class="card-link">
+
+          Explore
+
+          <svg
+            class="card-arrow"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
           >
 
-            <!-- IMAGE -->
-            <div class="card-media">
+            <path d="M4 12h16M14 6l6 6-6 6" />
 
-              <img
-                v-if="category.image"
-                :src="category.image"
-                :alt="category.title"
-                class="card-image"
-                loading="lazy"
-              />
+          </svg>
 
-              <div
-                v-else
-                class="card-placeholder"
-                aria-hidden="true"
-              >
+        </span>
 
-                <svg viewBox="0 0 24 24">
+      </div>
 
-                  <rect
-                    x="3"
-                    y="4"
-                    width="18"
-                    height="16"
-                    rx="2"
-                  />
+    </div>
 
-                  <circle
-                    cx="9"
-                    cy="10"
-                    r="1.6"
-                  />
+  </li>
 
-                  <path d="m4 18 5-5 4 4 3-3 4 4" />
-
-                </svg>
-
-              </div>
-
-            </div>
-
-
-            <!-- DARK OVERLAY -->
-
-            <div class="card-overlay"></div>
-
-
-            <!-- CARD CONTENT -->
-
-            <div class="card-body">
-
-              <h3>
-                {{ category.title }}
-              </h3>
-
-              <p>
-                {{ category.description }}
-              </p>
-
-              <span class="card-link">
-
-                Explore
-
-                <svg
-                  class="card-arrow"
-                  viewBox="0 0 24 24"
-                  aria-hidden="true"
-                >
-
-                  <path d="M4 12h16M14 6l6 6-6 6" />
-
-                </svg>
-
-              </span>
-
-            </div>
-
-          </a>
-
-        </li>
-
-      </ul>
+</ul>
 
     </div>
 
