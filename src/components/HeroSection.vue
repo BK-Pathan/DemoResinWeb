@@ -40,7 +40,7 @@
 
 
         <a
-        href="/shop"
+        href="#shop"
           class="hero-cta">
          <span>Shop Now</span>
         </a>
