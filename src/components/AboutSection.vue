@@ -9,11 +9,6 @@ import { ref, onMounted } from 'vue'
 import aboutVideo from '../assets/About.mp4'
 
 const videoSrc = aboutVideo
-
-// Optional poster:
-// import aboutPoster from '../assets/about-poster.jpg'
-// const posterSrc = aboutPoster
-
 const posterSrc = null
 
 
@@ -22,7 +17,6 @@ const posterSrc = null
    ========================================================= */
 
 const SLOW_MOTION = 0.5
-
 const videoEl = ref(null)
 const isPlaying = ref(false)
 
@@ -41,7 +35,6 @@ const canHover = () => {
    ========================================================= */
 
 const play = () => {
-
   const el = videoEl.value
 
   if (!el) return
@@ -63,73 +56,51 @@ const play = () => {
    ========================================================= */
 
 const pause = () => {
-
   const el = videoEl.value
 
   if (!el) return
 
   el.pause()
-
   isPlaying.value = false
 }
 
 
 /* =========================================================
-   TOGGLE
-   ========================================================= */
-
-const toggle = () => {
-
-  if (isPlaying.value) {
-    pause()
-  } else {
-    play()
-  }
-
-}
-
-
-/* =========================================================
-   HOVER
+   HOVER — LAPTOP / DESKTOP ONLY
    ========================================================= */
 
 const onEnter = () => {
-
   if (canHover()) {
     play()
   }
-
 }
 
 
 const onLeave = () => {
-
   if (canHover()) {
     pause()
   }
-
 }
 
 
 /* =========================================================
-   TOUCH
-   ========================================================= */
-
-const onTap = () => {
-
-  if (!canHover()) {
-    toggle()
-  }
-
-}
-
-
-/* =========================================================
-   PAGE TITLE
+   MOBILE AUTO PLAY
    ========================================================= */
 
 onMounted(() => {
   document.title = 'About — Royal Resin Art'
+
+  /*
+   * Laptop/Desktop:
+   * Video plays only on hover.
+   *
+   * Mobile/Touch:
+   * Video automatically plays and keeps looping.
+   */
+
+  if (!canHover()) {
+    play()
+  }
 })
 
 </script>
