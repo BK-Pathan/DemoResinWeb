@@ -1157,7 +1157,7 @@
   .eyebrow {
     color: var(--color-text-primary);
   }
-
+/* 
   .feature-icon {
     color: var(--color-text-primary);
   }
@@ -1168,7 +1168,7 @@
 
   .feature-text span {
     color: var(--color-text-secondary);
-  }
+  } */
 
   .scroll-indicator {
     color: var(--color-text-primary);
