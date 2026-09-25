@@ -1,0 +1,109 @@
+:root {
+  /* =========================================
+     ROYAL RESIN ART — COLOR THEME
+     ========================================= */
+
+  /* ---------- Brand Colors ---------- */
+  --color-brand-navy: #081F2A;
+  --color-brand-navy-deep: #06161D;
+  --color-brand-navy-light: #0D2F3D;
+
+  --color-brand-gold: #D4A64A;
+  --color-brand-gold-light: #E7C06A;
+  --color-brand-gold-dark: #B9852F;
+
+  /* ---------- Backgrounds ---------- */
+  --color-bg-primary: #081F2A;
+  --color-bg-secondary: #0B2935;
+  --color-bg-dark: #06161D;
+
+  --color-bg-light: #F8F6F2;
+  --color-bg-off-white: #FDFBF7;
+  --color-bg-card: #FFFFFF;
+
+  /* --color-hero-black:rgba(0, 0, 0, 0.212); */
+  
+  /* ---------- Surfaces ---------- */
+  --color-surface-dark: #0B2732;
+  --color-surface-dark-soft: #102F3A;
+  --color-surface-light: #FFFFFF;
+  --color-surface-light-soft: #F4F1EB;
+
+  /* ---------- Text ---------- */
+  --color-text-primary: #F8F6F2;
+  --color-text-secondary: #D8D2C7;
+  --color-text-muted: #A9A39A;
+
+  --color-text-dark: #17191A;
+  --color-text-dark-secondary: #5F5A55;
+  --color-text-dark-muted: #817B74;
+
+  /* ---------- Gold Text / Accent ---------- */
+  --color-accent: #D4A64A;
+  --color-accent-light: #E7C06A;
+  --color-accent-dark: #B9852F;
+
+  /* ---------- Borders ---------- */
+  --color-border-dark: rgba(212, 166, 74, 0.28);
+  --color-border-dark-soft: rgba(255, 255, 255, 0.10);
+
+  --color-border-light: #E4DED4;
+  --color-border-light-soft: #EEEAE3;
+
+  /* ---------- Buttons ---------- */
+  --color-button-primary: #D4A64A;
+  --color-button-primary-hover: #E7C06A;
+  --color-button-primary-text: #081F2A;
+
+  --color-button-dark: #081F2A;
+  --color-button-dark-hover: #0D2F3D;
+  --color-button-dark-text: #FFFFFF;
+
+  /* ---------- Icons ---------- */
+  --color-icon-primary: #D4A64A;
+  --color-icon-light: #F8F6F2;
+  --color-icon-dark: #081F2A;
+
+  /* ---------- Overlay ---------- */
+  --color-overlay-dark: rgba(6, 22, 29, 0.72);
+  --color-overlay-heavy: rgba(6, 22, 29, 0.88);
+
+  /* ---------- Shadows ---------- */
+  --shadow-soft: 0 8px 30px rgba(6, 22, 29, 0.12);
+  --shadow-card: 0 12px 35px rgba(6, 22, 29, 0.14);
+  --shadow-gold: 0 8px 25px rgba(212, 166, 74, 0.18);
+
+  /* ---------- Radius ---------- */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+
+  /* ---------- Typography ---------- */
+  --font-heading: "Playfair Display", Georgia, serif;
+  --font-body: "Inter", Arial, sans-serif;
+
+  /* ---------- Spacing ---------- */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-mid:13px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --space-2xl: 48px;
+  --space-3xl: 64px;
+  --space-4xl: 96px;
+}
+
+body{
+  padding:0;
+  margin:0;
+  background-color: var(--color-bg-dark);
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: clip;
+}
